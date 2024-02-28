@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dark-div">
+      <input type="radio" class="dark" id="dark" onclick="toggleDarkMode()" />
+      <label for="dark">toggle dark mode</label>
+    </div>
+    <div class="calc">
+      <h1>Age Calculator</h1>
+      <label for="dob">Date of Birth:</label>
+      <input type="number" id="dobDay" min="1" max="31" placeholder="Day" />
+      <input type="number" id="dobMonth" min="1" max="12" placeholder="Month" />
+      <input
+        type="number"
+        id="dobYear"
+        min="1900"
+        max="2024"
+        placeholder="Year"
+      />
+      <button onclick="calculateAge()">Calculate Age</button>
+      <div id="result"></div>
+      <p class="emoji" id="emoji"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
